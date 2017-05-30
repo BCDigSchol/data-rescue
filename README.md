@@ -17,7 +17,7 @@ We used the following API queries:
 These APIs return JSON formatted results, which we then saved as [neh-gov.json](data/neh/neh-gov.json) and [imls-gov.json](data/imls/imls-gov.json) respectively.
 
 ## Parsing API query results
-Next, we needed to parse the API query results to get the dataset URIs. Since data.gov doesn't store the datasets we need to find each dataset's URI. And since there are usually multiple formats for each dataset so we wanted to fetch each one.
+Next, we needed to parse the API query results to get the dataset URIs. Since data.gov doesn't store the datasets we need to find each dataset's URI. And since there are usually multiple formats for each dataset we wanted to fetch each one.
 
 In the span of about 24 hours, we put together a few Python scripts using [Jupyter Notebook](http://jupyter.org/) to parse and fetch each dataset. These files are labeled as [data.gov_imls-gov.ipynb](data.gov_imls-gov.ipynb) and [data.gov_imls-gov.ipynb](data.gov_imls-gov.ipynb). Also provided are normal Python scripts (.py) converted from the Jupyter Notebook files. These files have been tested to work with Python 2.7.13.
 
